@@ -7,10 +7,4 @@ module.exports = app => {
 
   app.route("/teamtrees").get(teamTreesObject);
   app.route("/").get(teamTreesObject);
-  /*app.route('/').get((req, res) => {
-        res.json({
-            teamtrees: '/teamtrees'
-        });
-    });
-    */
 };
