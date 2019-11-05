@@ -4,11 +4,11 @@ This teamtrees api will give you information about how many trees, last donator 
 # Example response
 ```json
 {
-  "total_trees": "15000000",
+  "total_trees": 15000000,
   "precentage_done": "75",
   "time_remaining_milliseconds": 4971601168,
   "time_remaining": {
-    "days": 60,
+    "days": 50,
     "hours": 12,
     "minutes": 6,
     "seconds": 2
