@@ -6,7 +6,7 @@ module.exports = (req, res) => {
     .then(res => res.text())
     .then(html => {
       let $ = cheerio.load(html);
-      let totalTrees = $("#totalTrees")["0"].attribs["data-count"];
+      let totalTrees = Number($("#totalTrees")["0"].attribs["data-count"]);
       let lastDonator = $(".media-body")["0"];
       let topDonator = $("#top-donations")["0"].children[0].next.children[3];
       let timeRemainingTimestamp =  new Date("2020-01-01T00:00:00.000Z").getTime() - Date.now();
